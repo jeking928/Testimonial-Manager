@@ -6,7 +6,7 @@
  * @copyright 2007 Clyde Jones
   * @copyright Portions Copyright 2003-2007 Zen Cart Development Team
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: Testimonials_Manager.php v1.5.4
+ * @version $Id: Testimonials_Manager.php v1.5.6
  */
  
 ?>
@@ -46,7 +46,7 @@
 <br class="clearBoth" />
 
 <blockquote>
-<div class="testimonial">
+<div id="testimonial">
    <?php
    if (($testimonials->fields[testimonials_image]) != ('')) {
      $testimonials_image = zen_image(DIR_WS_IMAGES . $testimonials->fields[testimonials_image], $testimonials->fields['testimonials_title'], TESTIMONIAL_IMAGE_WIDTH, TESTIMONIAL_IMAGE_HEIGHT);
